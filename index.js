@@ -13,7 +13,7 @@ app.use(cors('http://localhost:51734/'))
 
 
 app.get('/', (req, res)=>{
-    res.send({"msg":"Hello World"})
+    res.send({"msg":"Deploy funcionando"})
 })
 
 app.post('/candidates', async (req, res)=>{

@@ -9,7 +9,7 @@ const server = process.env.SERVER
 
 mongoose.connect(server)
 app.use(express.json())
-app.use(cors('http://localhost:51734/'))
+app.use(cors(`http://localhost:${port}/`))
 
 
 app.get('/', (req, res)=>{
